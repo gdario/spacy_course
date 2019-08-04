@@ -5,10 +5,10 @@ def convert_list_to_json(lst, filename='countries.json'):
     """Saves a list of strings as a JSON file."""
     with open(filename, 'wb') as f:
         f.write(json.dumps(lst, ensure_ascii=False).encode('utf8'))
-    
+
 
 if __name__ == '__main__':
-    
+
     countries = ['Afghanistan', 'Åland Islands', 'Albania', 'Algeria',
                  'American Samoa', 'Andorra', 'Angola', 'Anguilla',
                  'Antarctica', 'Antigua and Barbuda', 'Argentina', 'Armenia',
